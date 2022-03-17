@@ -1,0 +1,60 @@
+.menu{
+    display: none;
+}
+
+.menu > a{
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    background-color: lightgray;
+    margin-left: 20px auto;
+    margin-right: 20px auto;
+
+}
+
+ul > li {
+    float: left;
+    margin: 10px;
+}
+
+ul > li > a{
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-width: 800px) and (min-width: 100px) { 
+    
+    .menu{
+        display: block;
+        width: 100%;
+    }
+
+    nav {
+        width:50%;
+        height:100%;
+        left:-100%;
+        margin:0;
+        position: fixed;
+                
+    }
+
+    nav > ul {
+        display: block;
+    }
+
+    nav > ul > li {
+        display:block;
+        float:none;
+    }
+
+    .menu > a {
+        display:block;
+    }
+
+
+}
